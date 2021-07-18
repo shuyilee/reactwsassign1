@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { ListingItem } from "./listing.jsx";
+import { MarketPlace } from "./listing.jsx";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDOM.render(<div>
+    <MarketPlace />
+    <ListingItem />
+</div>,
+    document.querySelector('#root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/* <Grid /> */
+
+
+/* import { ListingItem } from "./listing.jsx";
+
+const el = < ListingItem / >
+
+    ReactDOM.render(el, document.querySelector("#root"));*/
